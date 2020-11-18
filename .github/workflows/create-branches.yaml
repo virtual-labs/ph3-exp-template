@@ -1,0 +1,51 @@
+# This is workflow is used to create 2 new branches ie., dev and testing
+
+name: Create Branches
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        git config --local user.email "admin@vlabs.ac.in"
+        git config --local user.name "vleadadmin"
+        git checkout --orphan testing
+        git reset
+        git add README.md experiment pedagogy storyboard .github/workflows/deployment_script.yml -f
+        git commit -m "Testing branch created."
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
+        force: true
+        branch: testing
+    - uses: actions/checkout@v2
+    - run: |
+        git config --local user.email "admin@vlabs.ac.in"
+        git config --local user.name "vleadadmin"
+        git checkout --orphan dev
+        git reset
+        git add README.md experiment pedagogy storyboard -f
+        git commit -m "Dev branch created"
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
+        force: true
+        branch: dev
+    - uses: actions/checkout@v2
+    - run: |
+        git config --local user.email "admin@vlabs.ac.in"
+        git config --local user.name "vleadadmin"
+        git checkout main
+        git rm -rf .github/workflows/create-branches.yaml
+        git commit -m "Script which created dev and testing branches is deleted."
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
+        force: true
+        branch: main
