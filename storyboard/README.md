@@ -1,4 +1,4 @@
-#### Please use the [reference](https://github.com/virtual-labs/exp-dev-reference/blob/main/storyboard.org) document to fill this template. You can view a sample storyboarding file in the following [link](https://github.com/virtual-labs/exp-dev-reference/tree/main/sample/storyboard)
+#### Please use the [reference](https://github.com/virtual-labs/exp-dev-reference/blob/main/storyboard.org) document to fill this template. Please follow the [link](https://github.com/virtual-labs/exp-dev-reference/tree/main/sample/storyboard) for viewing a sample storyboard document. 
 
 
 
@@ -10,7 +10,7 @@ Experiment 1: Name of the Experiment
 
 ### 1. Story Outline:
 
-Describe outline Here ( guide : The proposer should first draft the story outline for the proposed outline. This could be 2 or 3 paragraphs.)
+Describe outline here ( guide : The proposer should first draft the story outline for the proposed outline. This could be 2 or 3 paragraphs.)
 
 ### 2. Story:
 
