@@ -1,6 +1,6 @@
 #### Please use the [reference](https://github.com/virtual-labs/exp-dev-reference/blob/main/pedagogy.org) document to fill this template. You can view a sample pedagogy file in the following [link](https://github.com/virtual-labs/exp-dev-reference/tree/main/sample/pedagogy)
 
-## Pedagogy (Round 1)
+## Pedagogy
 <p align="center">
 
 
