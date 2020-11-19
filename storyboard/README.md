@@ -53,5 +53,5 @@ Link to flow chart Here : Store in the  /flowchart folder within Round2 folder i
 
 ### 5. Storyboard :
 
-Link the storybaord (.gif file ) in here :
+Link the storyboard (.gif file ) in here :
 (guide: This document should include sketching and description scene wise (duration, action, description). Software to be used for storyboarding : https://wonderunit.com/storyboarder/ (Its a FOSS tool).
