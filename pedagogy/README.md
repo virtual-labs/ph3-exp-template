@@ -5,7 +5,7 @@
 
 
 <br>
-<b> Experiment : 	 <a name="top"></a> <br>
+<b> Experiment : Name of the experiment	 <a name="top"></a> <br>
 </p>
 
 <b>Discipline | Fill your discipline name here <b> 
