@@ -1,1 +1,1 @@
-### This directory contains flowchart used in pedagogy.
+### This directory contains flowchart used in storyboard.
