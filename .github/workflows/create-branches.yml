@@ -21,7 +21,7 @@ jobs:
         git config --local user.name "vleadadmin"
         git checkout --orphan testing
         git reset
-        git add README.md experiment pedagogy storyboard .github/workflows/deployment_script.yml -f
+        git add README.md experiment pedagogy storyboard .github/workflows/deployment-script.yml -f
         git commit -m "Testing branch created."
     - uses: ad-m/github-push-action@master
       with:
