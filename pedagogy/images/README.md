@@ -1,1 +1,1 @@
-### This folder contains images used in pedagogy.
+### This directory contains images used in pedagogy.
