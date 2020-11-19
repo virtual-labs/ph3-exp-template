@@ -1,6 +1,10 @@
+ 
+# This workflow is used to build the experiment and push it to github pages
+
 name: Deploy Testing Branch
 on:
   push:
+# mentioning which branch should be used to build the experimnet
     branches: 
       - testing
 jobs:
@@ -8,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    # The following job will pull  phase3 lab management scipt and build the experiment
     - run: |
         git clone -b pipeline https://github.com/virtual-labs/ph3-lab-mgmt
         cd ph3-lab-mgmt/ph3-beta-to-ui3.0-conv
@@ -25,3 +30,4 @@ jobs:
         github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
         force: true
         branch: gh-pages
+ # Reference : https://github.com/marketplace/actions/github-push
