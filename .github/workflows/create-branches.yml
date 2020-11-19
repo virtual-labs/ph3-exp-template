@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      # The following job will create a testing branch and adds all required files to the branch
+      # And job uses basic git commands for creating branches and adding files
     - run: |
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
@@ -27,6 +29,7 @@ jobs:
         force: true
         branch: testing
     - uses: actions/checkout@v2
+      # The following job will create a dev branch and adds all required files to the branch
     - run: |
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
@@ -40,6 +43,7 @@ jobs:
         force: true
         branch: dev
     - uses: actions/checkout@v2
+    # The following job will delete the script that creates dev and testing branches 
     - run: |
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
@@ -51,3 +55,5 @@ jobs:
         github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
         force: true
         branch: main
+
+# Reference : https://github.com/marketplace/actions/github-push
