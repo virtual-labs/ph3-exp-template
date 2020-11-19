@@ -1,1 +1,1 @@
-### Storyboard
+### This directory would contain images of the [storyboard document](https://github.com/virtual-labs/ph3-exp-template/blob/main/storyboard/README.md).
