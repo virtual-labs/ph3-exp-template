@@ -1,4 +1,6 @@
-# This is workflow is used to create 2 new branches ie., dev and testing
+# This workflow is used to create 2 new branches ie., dev and testing 
+# when repositories are created using this template repository. 
+# This workflow also deletes itself in the created repositories.
 
 name: Create Branches
 
