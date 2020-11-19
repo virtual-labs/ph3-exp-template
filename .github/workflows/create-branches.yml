@@ -44,7 +44,7 @@ jobs:
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
         git checkout main
-        git rm -rf .github/workflows/create-branches.yaml
+        git rm -rf .github/workflows/create-branches.yml
         git commit -m "Script which created dev and testing branches is deleted."
     - uses: ad-m/github-push-action@master
       with:
