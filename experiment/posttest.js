@@ -97,15 +97,16 @@
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
-        {
-            question: "2.This is a sample question:", ///// Write the question inside double quotes
-            answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+    {
+      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      answers: {
+        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
+        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
+        c: "<img src='images/1c.PNG'>",      },
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
+    },
 
-            },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
-        }, 
+
         
     ];
 
