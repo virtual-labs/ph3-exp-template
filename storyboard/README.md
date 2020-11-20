@@ -4,7 +4,7 @@
 
 ## Storyboard
 
-Delete this line before submission : The core principle of Round 2 is to make the lab/experiment documentation elaborated in a manner that it makes easy for any person (developer/domain and non domain faculty/student) to understand and develop the lab/experiment.
+Delete this line before submission : The core principle of storyboarding is to make the lab/experiment documentation elaborated in a manner that it makes easy for any person (developer/domain and non domain faculty/student) to understand and develop the lab/experiment.
 
 Experiment 1: Name of the Experiment
 
@@ -24,7 +24,7 @@ Describe the objectives and goals in details here : (guide : The user should cle
 
 #### 2.3 Set the Pathway Activities:
 
-Describe the pathway activites here : (Guide : Set the pathway activities in line with the learning objectives (LOs)  & with a view to achieve the goals set in round #0 & round#1.  (once he begins, how he will traverse through the entire experiment ? in descriptive))
+Describe the pathway activites here : (Guide : Set the pathway activities in line with the learning objectives (LOs)  & with a view to achieve the goals set in introductory & pedagogy documnets.  (once he begins, how he will traverse through the entire experiment ? in descriptive))
 
 ##### 2.4 Set Challenges and Questions/Complexity/Variations in Questions:
 
@@ -42,7 +42,7 @@ Tool can be used to integrate formula in Markdown <b> [here](http://latex.codeco
 
 
 ### 3. Flowchart 4
-Link to flow chart Here : Store in the  /flowchart folder within Round2 folder in your repo
+Link to flow chart Here : Store in the  /flowchart folder within pedagogy folder in your repo
 <br>
 (guide :The lab proposer should extract logic from the story, prepare a flowchart from the story narration and write the algorithm to execute the black box.  use Google Drawings https://docs.google.com/drawings/ (send the link to your flowchart and also attach .png by exporting it )
 
