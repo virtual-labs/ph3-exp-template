@@ -19,7 +19,7 @@ jobs:
     - run: |
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
-        git checkout -b testing
+        git checkout --orphan testing
         git add README.md experiment pedagogy storyboard .github/workflows/deployment-script.yml -f
         git commit -m "Testing branch created."
     - uses: ad-m/github-push-action@master
@@ -32,7 +32,7 @@ jobs:
     - run: |
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
-        git checkout -b dev
+        git checkout --orphan dev
         git add README.md experiment pedagogy storyboard -f
         git commit -m "Dev branch created"
     - uses: ad-m/github-push-action@master
