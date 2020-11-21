@@ -17,6 +17,8 @@ jobs:
       # The following job will create a testing branch and adds all required files to the branch
       # And job uses basic git commands for creating branches and adding files
     - run: |
+        git config --local user.email "admin@vlabs.ac.in"
+        git config --local user.name "vleadadmin"
         git checkout -b testing
         git add README.md experiment pedagogy storyboard .github/workflows/deployment-script.yml -f
         git commit -m "Testing branch created."
