@@ -26,12 +26,6 @@ jobs:
         git status
         git commit -m "Testing branch created."
         git push origin testing
-        echo "done!!!!!!!!!"
-    - uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
-        force: true
-        branch: testing
     - uses: actions/checkout@v2
     # The following job will delete the script that creates dev and testing branches 
     - run: |
