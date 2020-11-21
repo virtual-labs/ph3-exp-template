@@ -25,6 +25,8 @@ jobs:
         git add README.md experiment pedagogy storyboard .github/workflows/deployment-script.yml -f
         git status
         git commit -m "Testing branch created."
+        git push origin testing
+        echo "done!!!!!!!!!"
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
