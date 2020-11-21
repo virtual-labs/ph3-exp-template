@@ -19,18 +19,41 @@ jobs:
     - run: |
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
-        git checkout -b testing
-        ls -al
-        git status
-        git add README.md experiment pedagogy storyboard .github/workflows/deployment-script.yml -f
-        git status
+        git checkout --orphan testing
+        git reset
+        git add README.md experiment pedagogy storyboard .github/workflows/deployment_script.yml -f
         git commit -m "Testing branch created."
-        git push origin testing
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
+        force: true
+        branch: testing
+    - uses: actions/checkout@v2
+      # The following job will create a dev branch and adds all required files to the branch
+    - run: |
+        git config --local user.email "admin@vlabs.ac.in"
+        git config --local user.name "vleadadmin"
+        git checkout --orphan dev
+        git reset
+        git add README.md experiment pedagogy storyboard -f
+        git commit -m "Dev branch created"
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
+        force: true
+        branch: dev
     - uses: actions/checkout@v2
     # The following job will delete the script that creates dev and testing branches 
     - run: |
+        git config --local user.email "admin@vlabs.ac.in"
+        git config --local user.name "vleadadmin"
         git checkout main
         git rm -rf .github/workflows/create-branches.yml
         git commit -m "Script which created dev and testing branches is deleted."
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
+        force: true
+        branch: main
 
 # Reference : https://github.com/marketplace/actions/github-push
