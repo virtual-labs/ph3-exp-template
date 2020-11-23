@@ -1,4 +1,4 @@
-#### Please use the [reference](https://github.com/virtual-labs/exp-dev-reference/blob/main/storyboard.org) document to fill this template. Please follow the [link](https://github.com/virtual-labs/exp-dev-reference/tree/main/sample/storyboard) for viewing a sample storyboard document. 
+#### Please use the [reference](https://github.com/virtual-labs/ph3-exp-dev-process/blob/main/storyboard.org) document to fill this template. Please follow the [link](https://github.com/virtual-labs/ph3-exp-dev-process/tree/main/sample/storyboard) for viewing a sample storyboard document. 
 
 
 
