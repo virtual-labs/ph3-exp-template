@@ -1,15 +1,15 @@
-- # automerge
+- # storyboarding
   name: "storyboarding"
   color: "f4ccff"
   description: "To be applied for storyboarding related issues"
-- # bot
+- # pedagogy
   name: "pedagogy"
   color: "8641c1"
   description: "To be applied for pedagogy related issues"
 - # bug
-  name: " bug"
+  name: "bug"
   color: "b60205"
-  description: ""
+  description: "This is bug"
 - # invalid
   name: ":no_entry_sign: invalid"
   color: "e6e6e6"
