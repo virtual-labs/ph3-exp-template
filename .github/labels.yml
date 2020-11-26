@@ -1,0 +1,17 @@
+- # automerge
+  name: "storyboarding"
+  color: "f4ccff"
+  description: "To be applied for storyboarding related issues"
+- # bot
+  name: "pedagogy"
+  color: "8641c1"
+  description: "To be applied for pedagogy related issues"
+- # bug
+  name: " bug"
+  color: "b60205"
+  description: ""
+- # invalid
+  name: ":no_entry_sign: invalid"
+  color: "e6e6e6"
+  description: ""
+## For refernce or adding more labels https://github.com/crazy-max/ghaction-github-labeler
