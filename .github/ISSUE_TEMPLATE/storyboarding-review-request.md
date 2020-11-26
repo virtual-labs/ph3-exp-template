@@ -1,7 +1,7 @@
 ---
 name: Storyboarding Review Request
 about: Get your storyboarding reviewed
-title: ''
+title: Request for Review of Storyboard
 labels: storyboarding
 assignees: ''
 
