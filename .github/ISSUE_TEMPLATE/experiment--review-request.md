@@ -1,7 +1,7 @@
 ---
 name: Experiment  Review Request
 about: 'Get your experiment reviewed '
-title: ''
+title: 'Request for Review of Experiment - '
 labels: request for review
 assignees: ''
 
