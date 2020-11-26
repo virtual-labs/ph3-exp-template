@@ -10,7 +10,7 @@ assignees: ''
 ## *Experiment  Review Request*
 Use this to get experiment reviewed.
 
-1. *Exp Name*:<!--Name of the experiment-->
-2. *Domain*:<!-- Domain of the experiment-->
-3. *Discipline*:<!-- Discipline of the experiment-->
+1. *Exp Name*:<!--Fill the name of the experiment-->
+2. *Domain*:<!-- Fill the domain of the experiment-->
+3. *Discipline*:<!-- Fill the discipline of the experiment-->
 4. *Testing URL*:<!-- https://virtual-labs.github.io/${{ github.repository }} --!>
