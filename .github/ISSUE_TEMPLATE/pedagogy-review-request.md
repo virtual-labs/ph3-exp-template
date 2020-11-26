@@ -1,7 +1,7 @@
 ---
 name: Pedagogy Review Request
 about: Get your pedagogy reviewed
-title: ''
+title: Request for Review of Pedagogy
 labels: pedagogy
 assignees: ''
 
