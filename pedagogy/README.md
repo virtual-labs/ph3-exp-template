@@ -1,4 +1,4 @@
-#### Please use the [reference](https://github.com/virtual-labs/ph3-exp-dev-process/blob/main/pedagogy/README.org) document to fill this template. You can view a sample pedagogy file in the following [link](https://github.com/virtual-labs/ph3-exp-dev-process/tree/main/sample/pedagogy).
+#### Please use the [reference](https://github.com/virtual-labs/ph3-exp-dev-process/blob/main/pedagogy/README.org) document to fill this template.  Follow the [link](https://github.com/virtual-labs/ph3-exp-dev-process/tree/main/sample/pedagogy) to view a sample pedagogy file.
 
 ## Pedagogy
 <p align="center">
