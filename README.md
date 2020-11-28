@@ -1,15 +1,14 @@
 ## Introduction
 
 
-
 <b>Discipline | <b>Fill your discipline name here
 :--|:--|
 <b> Lab | <b> Fill your lab name here
 <b> Experiment|     <b> Fill your experiment name and number here
 
-<h5> About the Experiment : </h5> <br>
+### About the Experiment 
 
-Type here: brief description of this experiment
+Fill a brief description of this experiment here
 
 <b>Name of Developer | <b> Fill the name of experiment owner here 
 :--|:--|
@@ -17,7 +16,7 @@ Type here: brief description of this experiment
 <b> Email id|     <b>  
 <b> Department |  
 
-#### Contributors List
+### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
