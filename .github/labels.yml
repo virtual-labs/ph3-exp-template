@@ -15,11 +15,11 @@
   color: "e6e6e6"
   description: "To be applied for invalid issues"
  - # Approved
-  name: ":heavy_check_mark: Approved"
+  name: ":heavy_check_mark: approved"
   color: "e6e6e6"
   description: "To be applied for approved issues"
  - # Request for review
-  name: "Request for review"
+  name: "request for review"
   color: "e6e6e6"
   description: "To be applied for issues which are requested for reviewing"
   
