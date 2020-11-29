@@ -14,11 +14,11 @@
   name: ":no_entry_sign: invalid"
   color: "e6e6e6"
   description: "To be applied for invalid issues"
-  - # Approved
+ - # Approved
   name: ":heavy_check_mark: Approved"
   color: "e6e6e6"
   description: "To be applied for approved issues"
-  - # Request for review
+ - # Request for review
   name: "Request for review"
   color: "e6e6e6"
   description: "To be applied for issues which are requested for reviewing"
