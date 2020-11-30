@@ -25,7 +25,7 @@ jobs:
           git config --local user.name "vleadadmin"
           git checkout main
           git rm -rf .github/workflows/labels.yml
-          git commit -m "Script which created dev and testing branches is deleted."
+          git commit -m "Label script is deleted."
       - uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
