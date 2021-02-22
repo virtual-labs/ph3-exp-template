@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v2
     # The following job will pull  phase3 lab management scipt and build the experiment
     - run: |
-        git clone -b pipeline https://github.com/virtual-labs/ph3-lab-mgmt
+        git clone https://github.com/virtual-labs/ph3-lab-mgmt
         cd ph3-lab-mgmt/ph3-beta-to-ui3.0-conv
         make host-experiments
         cd ../../
