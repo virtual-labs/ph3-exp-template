@@ -40,6 +40,7 @@
     function showResults() {
         // gather answer containers from our quiz
         const answerContainers = quizContainer.querySelectorAll(".answers");
+        answerContainers.forEach(e => e.style.color = "black");
 
         // keep track of user's answers
         let numCorrect = 0;
