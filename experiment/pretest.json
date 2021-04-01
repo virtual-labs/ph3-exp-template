@@ -1,0 +1,18 @@
+[
+{"question":"This is a Sample Question 1?",
+"answers":{
+            "a":"answer1",
+            "b":"answer2",
+            "c":"answer3",
+            "d":"answer4"
+          },
+"correctAnswer":"a"},
+{"question":"This is a Sample Question 2?",
+"answers":{
+            "a":"answer1",
+            "b":"answer2",
+            "c":"answer3",
+            "d":"answer4"
+          },
+"correctAnswer":"c"} 
+]
