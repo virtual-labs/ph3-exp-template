@@ -18,10 +18,10 @@ jobs:
             node-version: '12'
             check-latest: true
     - run: |
-        git clone https://github.com/virtual-labs/ph3-lab-mgmt
+        git clone --depth=1 https://github.com/virtual-labs/ph3-lab-mgmt
         cd ph3-lab-mgmt
         npm install
-        node exp.js
+        npm run build-exp
         cd ../
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
