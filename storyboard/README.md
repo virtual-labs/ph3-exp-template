@@ -10,7 +10,7 @@ Experiment 1: Name of the Experiment
 
 ### 1. Story Outline
 
-Describe outline here ( guide : The proposer should first draft the story outline for the proposed outline. This could be 2 or 3 paragraphs.)
+Describe outline here ( Guide : The proposer should first draft the story outline for the proposed outline. This could be 2 or 3 paragraphs.)
 
 ### 2. Story
 
