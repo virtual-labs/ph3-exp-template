@@ -6,7 +6,7 @@ This part of the experiment is specifically for assessment purposes. This allows
 These can be
 * Pretest - Pre requisite quizzes
 * Posttest - Testing the learning
-* LearningUnit Quizzes - Quizzes to test the section's learning.
+* Learning Unit Quizzes - Quizzes to test the section's learning.
 The format for the same is discussed below.
 
 ### 2. Target Audience
@@ -32,7 +32,8 @@ The data for the quiz needs to be added to a json file pertaining the following 
 ```
 ### 4. Quiz V2.0 (Enhancements done)
 The new format of quiz has multiple new additions. The details for which have been described below.  
-The format of json would bas linked [here](./pretest.json)  
+The format of json would be as linked [here](./pretest.json)  
+
 First we will look at the additional fields added  
 
 ### 4.1 Fields 
@@ -74,12 +75,6 @@ Just like we mention answers, we can have a section for explanation so that they
 /* Can be excluded from json */
 ```  
 
-```
-"explanations": {
-    "a" : "Explanation 1  <a href='www.google.com'>here</a>",
-    "b" : "Explanation 2"
-},
-```
 
 ### 4.4 Levels
 Adds an ability to filter questions based on difficulty levels. This is mandatory and has to be mentioned for each question.  
@@ -107,7 +102,7 @@ This could be used for
 An example for the same can be found here: source | website
 
 2. Multi Correct
-To mimc the functionality of multi correct questions, one can add options as part of the question itself, and the actual answe options can be like : 
+To mimic the functionality of multi correct questions, one can add options as part of the question itself, and the actual answer options can be like : 
 ```
     "answers" : 
     {
