@@ -126,26 +126,26 @@ This is till the automatic validation is set up.
 * If explanation is present it has to be an object and needs to follow the description of answer object.  
 
 ### 7. Test Cases
-- [ ] Using the mentioned quiz format  
-- [ ] Using the old quiz json format
+- [x] Using the mentioned quiz format  
+- [x] Using the old quiz json format
 - [ ] Not including the version in json
 - [ ] Including incorrect version in json 
 - [ ] Including correct version but following old format 
-- [ ] Difficulty not mentioned
-- [ ] Incorrect difficulty level mentioned
-- [ ] explanation not provided for all options
-- [ ] explanation empty
-- [ ] explanation object not defined
-- [ ] HTML in quuestion (tags like hyper links, bold etc)
-- [ ] HTML in answer (tags like hyper links, bold etc)
-- [ ] HTML in explanation (tags like hyper links, bold etc)
-- [ ] On wrong annswer only wrong answer is colored red
-- [ ] On correct answer all red color resets
-- [ ] Combination of filters working properly
-- [ ] If all questions have same difficulty, filter option should be hidden.
-- [ ] When questions are answered after filtering, marks should be counted out of filtewred questions, not total.
-- [ ] On wrong answer only explanation of wrong answer is shown
-- [ ] On correct answer all available explanations are shown
+- [x] Difficulty not mentioned
+- [x] Incorrect difficulty level mentioned
+- [x] explanation not provided for all options
+- [x] explanation empty
+- [x] explanation object not defined
+- [x] HTML in quuestion (tags like hyper links, bold etc)
+- [x] HTML in answer (tags like hyper links, bold etc)
+- [x] HTML in explanation (tags like hyper links, bold etc)
+- [x] On wrong annswer only wrong answer is colored red
+- [x] On correct answer all red color resets
+- [x] Combination of filters working properly
+- [x] If all questions have same difficulty, filter option should be hidden.
+- [x] When questions are answered after filtering, marks should be counted out of filtewred questions, not total.
+- [x] On wrong answer only explanation of wrong answer is shown
+- [x] On correct answer all available explanations are shown
 
 ### 8. TODO
 * Add automatic schema validation
