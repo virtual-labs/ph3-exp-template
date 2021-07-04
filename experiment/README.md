@@ -114,6 +114,44 @@ To mimic the functionality of multi correct questions, one can add options as pa
 ```
 An example for the same can be found here: source | website
 
+3. Image Support  
+You can add images to both question and answers, there can be multiple cases of the same. The following examples can be followed.  
+* **Image in question** : Add img tag in question.
+```
+"questions" : [
+    {
+        "question" : "<img src="./images/example.png" alt="question image">",
+        "answers" : 
+        {
+            "a" : 1,
+            "b" : 2,
+            "c" : 3,
+            "d" : 4
+        },
+        "correctAnswer" : c
+    }
+]
+```  
+
+* **Image and Text in question** : Add br tag and img tag in question after text. 
+```
+"questions" : [
+    {
+        "question" : "This is an example question <br><img src="./images/example.png" alt="question image">",
+        "answers" : 
+        {
+            "a" : 1,
+            "b" : 2,
+            "c" : 3,
+            "d" : 4
+        },
+        "correctAnswer" : c
+    }
+]
+```  
+> The same two cases apply for answers too.
+**Make sure the image aspect ratio remains constant and good to maintain the structure**
+
 ### 6. Manual Validation of Quiz Json (wrt version 2.0)
 This is till the automatic validation is set up.
 * The first field has to be version with 2 or 2.0 as value.
