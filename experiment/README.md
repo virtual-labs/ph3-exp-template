@@ -149,7 +149,8 @@ You can add images to both question and answers, there can be multiple cases of 
     }
 ]
 ```  
-> The same two cases apply for answers too.
+> The same two cases apply for answers too. [Example Link](https://github.com/virtual-labs/exp-convolutional-codes-iiith/blob/dev/experiment/posttest.json) 
+
 **Make sure the image aspect ratio remains constant and good to maintain the structure**
 
 ### 6. Manual Validation of Quiz Json (wrt version 2.0)
