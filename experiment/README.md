@@ -120,7 +120,7 @@ You can add images to both question and answers, there can be multiple cases of 
 ```
 "questions" : [
     {
-        "question" : "<img src="./images/example.png" alt="question image">",
+        "question": "$\\\\$ <img src='./images/example.png' alt='question image'/>",
         "answers" : 
         {
             "a" : 1,
@@ -137,7 +137,7 @@ You can add images to both question and answers, there can be multiple cases of 
 ```
 "questions" : [
     {
-        "question" : "This is an example question <br><img src="./images/example.png" alt="question image">",
+        "question": "This is an example question $\\\\$ <br><img src='./images/example.png' alt='question image'/>",
         "answers" : 
         {
             "a" : 1,
