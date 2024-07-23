@@ -1,0 +1,10 @@
+name: test-deployment
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  call-workflow-test:
+    uses: virtual-labs/vlabs-workflows/.github/workflows/view_exp.yml
+    secrets: inherit
