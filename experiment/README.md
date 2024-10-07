@@ -1,191 +1,79 @@
 ## README
+Welcome to the experiment development process for developers involved in the Virtual Labs project. This guide will help you create an experiment designed to explain the lab topic. 
 
-## Quiz
-### 1. Introduction
-This part of the experiment is specifically for assessment purposes. This allows for the creation of a quiz with multiple choice single answer questions.  
-These can be
-* Pretest - Pre requisite quizzes
-* Posttest - Testing the learning
-* Learning Unit Quizzes - Quizzes to test the section's learning.
-The format for the same is discussed below.
+# Steps to Create an Experiment:
+1. Verify and Understand the Experiment Repositories:
+* Begin by thoroughly reviewing and understanding the structure and purpose of the experiment repositories. For more details visit [here](https://vlead.vlabs.ac.in/development/#development-process)
 
-### 2. Target Audience
-This guide is meant for anyone creating a virtual lab and wanting to have a quiz section.
+2. Repository Creation:
+The VLEAD team will create a GitHub repository for each experiment. The write access to these reopsitories is a must to be able to create, edit or modify the experiment. You can refer to this [example repository](https://github.com/virtual-labs-cms/exp-template) to get familiar with the structure and format.
 
-### 3. Structure of quiz
-The data for the quiz needs to be added to a json file pertaining the following specifications.
-1. The quiz needs to have an array of objects, each object representing a question. As shown below
-```
-"questions" : [
-    {
-        "question" : "What is 1+2 ?",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```
-### 4. Quiz V2.0 (Enhancements done)
-The new format of quiz has multiple new additions. The details for which have been described below.  
-The format of json would be as linked [here](./pretest.json)  
+3. Branch Structure:
+* Each repository will contain four branches:
+**dev** (development)
+**testing** (end-to-end testing)
+**gh-pages** (for GitHub Pages hosting)
+**main** (production-ready)
+Developers are expected to work only in the dev branch. After performing unit testing within the dev branch, the code can be moved to the testing branch for comprehensive end-to-end testing.
 
-First we will look at the additional fields added  
+4. Pages Distribution for Experiment Development
+Each experiment's content will be distributed across the following pages:
 
-### 4.1 Fields 
-* Mandatory Fields
-    * [version](#42-version) - Without which the enhanced quiz will not be rendered. 
-    * [levels](#44-levels) -  Adds difficulty level to each question (Allows for filtering)
+## aim.md
+This file outlines the broad, general, and long-term intentions for developing the experiment. There can be multiple objectives for teaching an experiment in an online format. Clearly state these intentions to provide a solid understanding of the experiment’s goals.
 
-* Optional Fields
-    * [explanations](#43-explanations) - Adds an explanation to each answer. If wrong answer is choosen, only it's explanation pops up.  If correct answer is choosen, all available explanations pop up.  
+## experiment-name.md
+The name of the experiment will serve as the title for each page. Ensure the title is precise, simple, and easily understandable for students. A well-chosen name helps learners quickly grasp the focus of the experiment.
 
-### 4.2 Version
-The very first field is absolutely necessary. This ensures that the quiz supports the new features.
-```
-"version": 2.0
-```   
+## pretest.json and posttest.json
+These files are used to assess learners' understanding via multiple-choice, single-answer quizzes:
 
-### 4.3 Explanations
-Just like we mention answers, we can have a section for explanation so that they show up after an answer is marked. This is optional and can completely be left out. The three ways of defining (Assuming there are 4 answers a, b, c, d):
+**Pretest:** To assess prerequisite knowledge before beginning the experiment.
+**Posttest:** To evaluate the understanding gained after completing the experiment.
+**Learning Unit Quizzes:** To test knowledge specific to each section of the content.
+Refer to this [Example](https://eerc01-iiith.vlabs.ac.in/exp/compression-test-experiment/) for the correct format of pretest and posttest pages.
 
-1. All answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "b" : "Explanation 2"
-    "c" : "Explanation 3"
-    "d" : "Explanation 4"
-},
-```  
-2. Some answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "d" : "Explanation 4"
-},
-```
+The quiz is structured in a JSON file format. The quiz questions must be represented as an array of objects. Each object corresponds to a question. The quiz consists of multiple questions, each defined as an object with the following attributes:
+**question:** The text of the question to be presented to the user.
+**answers:** A set of key-value pairs representing the answer options. The keys (e.g., a, b, c, d) represent the option labels, and the values are the actual answer choices.
+**correctAnswer:** The correct answer, indicated by the corresponding option label (a, b, c, or d).
+  
+Example:
 
-3. No answers have explanations
-```
-/* Can be excluded from json */
-```  
+  ```
+  "questions" : [
+      {
+          "question" : "What is 1+2 ?",
+          "answers" : 
+          {
+              "a" : 1,
+              "b" : 2,
+              "c" : 3,
+              "d" : 4
+          },
+          "correctAnswer" : c
+      }
+  ]
+  ```
+For more details, please click [here](LINK TO QUIZ.MD)
+Please consider running your JSON files through a JSON validator like https://jsonlint.com/ for smoother debugging. 
 
+## procedure.md
+This file outlines the step-by-step instructions for completing the experiment. You may include graphs, tables, images, and other visual aids to enhance clarity. Refer to this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html) for guidance on formatting and structuring the procedure section.
 
-### 4.4 Levels
-Adds an ability to filter questions based on difficulty levels. This is mandatory and has to be mentioned for each question.  
-The three available difficulty levels are:
-```
-['beginner', 'intermediate', 'advanced']
-```
-Using any other will not work. The format for the same:
-```
-"difficulty" : "beginner"
-```
+## reference.md
+This section lists all sources and references used in the development of the experiment. Properly citing sources provides students with a better understanding of the topic and encourages further reading. 
 
-### 5. Tips
-1. An extra functionality of explanation is the ability to add an Rich Text (HTML Formatted). It will work just like in html.  
-This could be used for
-    a. Adding hyper links
-    b. Formatting text etc.
-```
-"explanations": {
-    "a" : "Explanation 1  <a href='www.google.com'>here</a>",
-    "b" : "Explanation 2"
-},
-```
-> This can be done in either of explanation, answer and the question.
-An example for the same can be found here: source | website
+## Theory.md
+ This file should contain the theoretical principles or statements that explain the facts or phenomena behind the experiment. Use graphs, tables, images, and other illustrative tools where necessary. You may also incorporate LaTeX for mathematical or scientific notations, as demonstrated in this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html). {USE OF LATEX NEEDS TO BE MENTIONED}
 
-2. Multi Correct
-To mimic the functionality of multi correct questions, one can add options as part of the question itself, and the actual answer options can be like : 
-```
-    "answers" : 
-    {
-        "a" : "both i and ii",
-        "b" : "All i, ii, iii, iv",
-        "c" : "Only i",
-        "d" : "None of the above"
-    }
-```
-An example for the same can be found here: source | website
+## Do’s and Don’ts:
+### Do’s:
+* Always use the dev branch for development and merge changes into the testing branch after testing. The main branch should only contain thoroughly tested code.
+* Follow best practices in the development process, as outlined in [the Virtual Labs Development Guide](https://vlead.vlabs.ac.in/development/#basic-requirements-for-the-experiments12).
 
-3. Image Support  
-You can add images to both question and answers, there can be multiple cases of the same. The following examples can be followed.  
-* **Image in question** : Add img tag in question.
-```
-"questions" : [
-    {
-        "question": "$\\\\$ <img src='./images/example.png' alt='question image'/>",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
+### Don’ts:
+* Avoid adding unnecessary files to the repository.
+* Never delete the gh-pages branch, as it is critical for the automatic deployment of the experiment and its user interface to GitHub Pages for testing purposes.
 
-* **Image and Text in question** : Add br tag and img tag in question after text. 
-```
-"questions" : [
-    {
-        "question": "This is an example question $\\\\$ <br><img src='./images/example.png' alt='question image'/>",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
-> The same two cases apply for answers too. [Example Link](https://github.com/virtual-labs/exp-convolutional-codes-iiith/blob/dev/experiment/posttest.json) 
-
-**Make sure the image aspect ratio remains constant and good to maintain the structure**
-
-### 6. Manual Validation of Quiz Json (wrt version 2.0)
-This is till the automatic validation is set up.
-* The first field has to be version with 2 or 2.0 as value.
-* The questions needs to be an array of objects containing questions.
-* Each question object should hav a question field, answers field, difficulty field and correctAnswer field.
-    * question : Should be a string
-    * answer : Should be an object containing options, and each option should be a string.
-    * difficulty : should be a string and should have values from ["beginner", "intermerdiate", "advanced"]
-    * correctAnswer : Should be a string and it's value should be present in keys of one of the answer.
-* If explanation is present it has to be an object and needs to follow the description of answer object.  
-
-### 7. Test Cases
-- [x] Using the mentioned quiz format  
-- [x] Using the old quiz json format
-- [ ] Not including the version in json
-- [ ] Including incorrect version in json 
-- [ ] Including correct version but following old format 
-- [x] Difficulty not mentioned
-- [x] Incorrect difficulty level mentioned
-- [x] explanation not provided for all options
-- [x] explanation empty
-- [x] explanation object not defined
-- [x] HTML in quuestion (tags like hyper links, bold etc)
-- [x] HTML in answer (tags like hyper links, bold etc)
-- [x] HTML in explanation (tags like hyper links, bold etc)
-- [x] On wrong annswer only wrong answer is colored red
-- [x] On correct answer all red color resets
-- [x] Combination of filters working properly
-- [x] If all questions have same difficulty, filter option should be hidden.
-- [x] When questions are answered after filtering, marks should be counted out of filtewred questions, not total.
-- [x] On wrong answer only explanation of wrong answer is shown
-- [x] On correct answer all available explanations are shown
-
-### 8. TODO
-* Add automatic schema validation
-* Link to source files implementing the above tips.
+For more information on the development process, refer to [the Development Process Guide](https://vlead.vlabs.ac.in/development/#development-process).
