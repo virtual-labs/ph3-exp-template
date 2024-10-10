@@ -6,5 +6,5 @@ on:
 
 jobs:
   call-workflow-test:
-    uses: virtual-labs/vlabs-workflows/.github/workflows/view_exp.yml
+    uses: virtual-labs/vlabs-workflows/.github/workflows/view_exp.yml@main
     secrets: inherit
