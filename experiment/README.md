@@ -16,7 +16,17 @@ The VLEAD team will create a GitHub repository for each experiment. The write ac
 **main** (production-ready)
 Developers are expected to work only in the dev branch. After performing unit testing within the dev branch, the code can be moved to the testing branch for comprehensive end-to-end testing.
 
-4. Pages Distribution for Experiment Development
+4. Tags:
+To ensure proper structure and organization of the experiment, it is essential to assign relevant tags. These tags help categorize the experiment for better accessibility and searchability.
+
+When adding tags, please adhere to the following guidelines:
+* **Relevance:** Ensure that the tags are strictly relevant to the content of the experiment.
+* **Minimum Number:** A minimum of five tags must be assigned to each experiment.
+* **Format:** Tags should be comma-separated.
+* **Tag Structure:** Each tag can consist of multiple words separated by spaces, or hyphenated words (e.g., “data-analysis”). The use of any other special characters is not allowed.
+* **Exclusions:** Do not include the experiment name, lab name, institute name, or discipline name as tags.
+
+5. Pages Distribution for Experiment Development
 Each experiment's content will be distributed across the following pages:
 
 ## aim.md
@@ -55,8 +65,23 @@ Example:
       }
   ]
   ```
-For more details, please click [here](LINK TO QUIZ.MD)
+For more details, please click [here](https://github.com/virtual-labs/ph3-lab-mgmt/blob/dev/docs/quiz.md)
 Please consider running your JSON files through a JSON validator like https://jsonlint.com/ for smoother debugging. 
+
+## simulation folder
+The simulation folder contains the essential files needed to power the experiment's interactive simulation. This is where you upload all the necessary files for the simulation to function correctly.
+
+Please follow these guidelines:
+
+**File Structure:** Organize your files into appropriate subfolders such as:
+* css – for stylesheets
+* js – for JavaScript files
+* images – for images used in the simulation
+
+Ensure that all the file types correspond to the implementation needs of the simulation.
+
+**index.html Requirement:**
+For the simulation page to work, the main HTML file must be named index.html. No other names are permitted for the main HTML file for simulation.
 
 ## procedure.md
 This file outlines the step-by-step instructions for completing the experiment. You may include graphs, tables, images, and other visual aids to enhance clarity. Refer to this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html) for guidance on formatting and structuring the procedure section.
@@ -65,15 +90,21 @@ This file outlines the step-by-step instructions for completing the experiment. 
 This section lists all sources and references used in the development of the experiment. Properly citing sources provides students with a better understanding of the topic and encourages further reading. 
 
 ## Theory.md
- This file should contain the theoretical principles or statements that explain the facts or phenomena behind the experiment. Use graphs, tables, images, and other illustrative tools where necessary. You may also incorporate LaTeX for mathematical or scientific notations, as demonstrated in this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html). {USE OF LATEX NEEDS TO BE MENTIONED}
+ This file should contain the theoretical principles or statements that explain the facts or phenomena behind the experiment. Use graphs, tables, images, and other illustrative tools where necessary. You may also incorporate LaTeX for mathematical or scientific notations, as demonstrated in this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html).
 
 ## Do’s and Don’ts:
 ### Do’s:
 * Always use the dev branch for development and merge changes into the testing branch after testing. The main branch should only contain thoroughly tested code.
 * Follow best practices in the development process, as outlined in [the Virtual Labs Development Guide](https://vlead.vlabs.ac.in/development/#basic-requirements-for-the-experiments12).
+* For the simulation page to work, the main HTML file must be named index.html
 
 ### Don’ts:
 * Avoid adding unnecessary files to the repository.
 * Never delete the gh-pages branch, as it is critical for the automatic deployment of the experiment and its user interface to GitHub Pages for testing purposes.
+* Do not include the experiment name, lab name, institute name, or discipline name as tags.
 
-For more information on the development process, refer to [the Development Process Guide](https://vlead.vlabs.ac.in/development/#development-process).
+For more information on the development process, refer to 
+* [Virtual Labs Development Process](https://vlead.vlabs.ac.in/development/#development-process)
+* [Virtual Labs Onboarding Process](https://vlead.vlabs.ac.in/development/#basic-requirements-for-the-experiments12)
+* [Virtual Labs Content Development Platform](https://vlead.vlabs.ac.in/development/#getting-started)
+* [Create experiment at one glance](https://virtual-labs-cms.netlify.app/)
