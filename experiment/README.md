@@ -13,28 +13,18 @@ Each repository will contain four branches:
 * **testing** (end-to-end testing)
 * **gh-pages** (for GitHub Pages hosting)
 * **main** (production-ready)
-Developers are expected to work only in the dev branch. After performing unit testing within the dev branch, the code can be moved to the testing branch for comprehensive end-to-end testing.
+Developers are required to work exclusively in the dev branch. Once the dev branch has been fully tested, it should be merged into the testing branch. This will automatically deploy the experiment and user interface to GitHub Pages for testing. The link to the deployed page can be found in the 'About' section of the experiment repository.
 
-## Tags
-To ensure proper structure and organization of the experiment, it is essential to assign relevant tags. These tags help categorize the experiment for better accessibility and searchability.
+## Content for Experiment Development
+The content for each experiment should be organized across the designated pages. Please maintain the existing file names and only populate the current files with the content of your experiment.
 
-When adding tags, please adhere to the following guidelines:
-* Ensure that the tags are strictly relevant to the content of the experiment.
-* A minimum of five tags must be assigned to each experiment.
-* Tags should be comma-separated.
-* Each tag can consist of multiple words separated by spaces, or hyphenated words (e.g., “data-analysis”). The use of any other special characters is not allowed.
-* Do not include the experiment name, lab name, institute name, or discipline name as tags.
-
-## Pages Distribution for Experiment Development
-Each experiment's content will be distributed across the following pages:
-
-### aim.md
+1. ### aim.md
 This file outlines the broad, general, and long-term intentions for developing the experiment. There can be multiple objectives for teaching an experiment in an online format. Clearly state these intentions to provide a solid understanding of the experiment’s goals.
 
-### experiment-name.md
+2. ### experiment-name.md
 The name of the experiment will serve as the title for each page. Ensure the title is precise, simple, and easily understandable for students. A well-chosen name helps learners quickly grasp the focus of the experiment.
 
-### pretest.json and posttest.json
+3. ### pretest.json and posttest.json
 These files are used to assess learners' understanding via multiple-choice, single-answer quizzes:
 
 * **Pretest:** To assess prerequisite knowledge before beginning the experiment.
@@ -65,9 +55,15 @@ Example:
   ]
   ```
 For more details, please click [here](https://github.com/virtual-labs/ph3-lab-mgmt/blob/dev/docs/quiz.md)
-Please consider running your JSON files through a JSON validator like https://jsonlint.com/ for smoother debugging. 
+Please ensure that your JSON files are validated through a JSON validator like https://jsonlint.com/ for smoother debugging. 
 
-### simulation folder
+4. ### theory.md
+ This file should contain the theoretical principles or statements that explain the facts or phenomena behind the experiment. Use graphs, tables, images, and other illustrative tools where necessary. You may also incorporate LaTeX for mathematical or scientific notations, as demonstrated in this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html).
+
+5. ### procedure.md
+This file outlines the step-by-step instructions for completing the experiment. You may include graphs, tables, images, and other visual aids to enhance clarity. Refer to this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html) for guidance on formatting and structuring the procedure section.
+
+6. ### simulation folder
 The simulation folder contains the essential files needed to power the experiment's interactive simulation. This is where you upload all the necessary files for the simulation to function correctly.
 
 Please follow these guidelines:
@@ -79,17 +75,11 @@ Please follow these guidelines:
 
 Ensure that all the file types correspond to the implementation needs of the simulation.
 
-**index.html Requirement:**
+**index.html requirement:**
 For the simulation page to work, the main HTML file must be named index.html. No other names are permitted for the main HTML file for simulation.
 
-### procedure.md
-This file outlines the step-by-step instructions for completing the experiment. You may include graphs, tables, images, and other visual aids to enhance clarity. Refer to this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html) for guidance on formatting and structuring the procedure section.
-
-### reference.md
+7. ### reference.md
 This section lists all sources and references used in the development of the experiment. Properly citing sources provides students with a better understanding of the topic and encourages further reading. 
-
-### Theory.md
- This file should contain the theoretical principles or statements that explain the facts or phenomena behind the experiment. Use graphs, tables, images, and other illustrative tools where necessary. You may also incorporate LaTeX for mathematical or scientific notations, as demonstrated in this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html).
 
 ### Do’s and Don’ts:
 **Do’s:**
@@ -100,7 +90,6 @@ This section lists all sources and references used in the development of the exp
 **Don’ts:**
 * Avoid adding unnecessary files to the repository.
 * Never delete the gh-pages branch, as it is critical for the automatic deployment of the experiment and its user interface to GitHub Pages for testing purposes.
-* Do not include the experiment name, lab name, institute name, or discipline name as tags.
 
 For more information on the development process, refer to 
 * [Virtual Labs Development Process](https://vlead.vlabs.ac.in/development/#development-process)
