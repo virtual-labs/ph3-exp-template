@@ -54,8 +54,10 @@ Example:
       }
   ]
   ```
-For more details, please click [here](https://github.com/virtual-labs/ph3-lab-mgmt/blob/dev/docs/quiz.md)
-Please ensure that your JSON files are validated through a JSON validator like https://jsonlint.com/ for smoother debugging. 
+For more details about populating the pretest and posttest json files, please click [here](https://github.com/virtual-labs/ph3-lab-mgmt/blob/dev/docs/quiz.md). 
+
+**Note** 
+- Please ensure that your JSON files are validated through a JSON validator like https://jsonlint.com/ for smoother debugging. 
 
 4. ### theory.md
  This file should contain the theoretical principles or statements that explain the facts or phenomena behind the experiment. Use graphs, tables, images, and other illustrative tools where necessary. You may also incorporate LaTeX for mathematical or scientific notations, as demonstrated in this [example](https://virtual-labs.github.io/exp-adder-circuit-iiith/procedure.html).
