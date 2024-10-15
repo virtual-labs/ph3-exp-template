@@ -30,7 +30,7 @@ These files are used to assess learners' understanding via multiple-choice, sing
 * **Pretest:** To assess prerequisite knowledge before beginning the experiment.
 * **Posttest:** To evaluate the understanding gained after completing the experiment.
 * **Learning Unit Quizzes:** To test knowledge specific to each section of the content.
-Refer to this [Example](https://eerc01-iiith.vlabs.ac.in/exp/compression-test-experiment/) for the correct format of pretest and posttest pages.
+Refer to this [example](https://eerc01-iiith.vlabs.ac.in/exp/compression-test-experiment/) for the correct format of pretest and posttest pages.
 
 The quiz is structured in a JSON file format. The quiz questions must be represented as an array of objects. Each object corresponds to a question. The quiz consists of multiple questions, each defined as an object with the following attributes:
 * **question:** The text of the question to be presented to the user.
