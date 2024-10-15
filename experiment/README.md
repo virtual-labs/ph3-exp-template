@@ -92,7 +92,6 @@ This section lists all sources and references used in the development of the exp
 * Never delete the gh-pages branch, as it is critical for the automatic deployment of the experiment and its user interface to GitHub Pages for testing purposes.
 
 For more information on the development process, refer to 
+* [Virtual Labs Onboarding Process](https://vlead.vlabs.ac.in/development/#onboarding-process)
 * [Virtual Labs Development Process](https://vlead.vlabs.ac.in/development/#development-process)
-* [Virtual Labs Onboarding Process](https://vlead.vlabs.ac.in/development/#basic-requirements-for-the-experiments12)
-* [Virtual Labs Content Development Platform](https://vlead.vlabs.ac.in/development/#getting-started)
-* [Create experiment at one glance](https://virtual-labs-cms.netlify.app/)
+* [Virtual Labs Hosting Process](https://vlead.vlabs.ac.in/development/#hosting-process)
