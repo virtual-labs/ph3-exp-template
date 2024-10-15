@@ -84,7 +84,7 @@ This section lists all sources and references used in the development of the exp
 ### Do’s and Don’ts:
 **Do’s:**
 * Always use the dev branch for development and merge changes into the testing branch after testing. The main branch should only contain thoroughly tested code.
-* Follow best practices in the development process, as outlined in [the Virtual Labs Development Guide](https://vlead.vlabs.ac.in/development/#basic-requirements-for-the-experiments12).
+* Follow best practices in the development process, as outlined in [here](https://vlead.vlabs.ac.in/development/#best-practices).
 * For the simulation page to work, the main HTML file must be named index.html
 
 **Don’ts:**
