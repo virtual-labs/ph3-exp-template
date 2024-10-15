@@ -1,14 +1,13 @@
-## README
+# Steps to Create an Experiment
 Welcome to the experiment development process for developers involved in the Virtual Labs project. This guide will help you create an experiment designed to explain the lab topic. 
 
-# Steps to Create an Experiment:
-## Verify and Understand the Experiment Repositories:
+## Verify and Understand the Experiment Repositories
 Begin by thoroughly reviewing and understanding the structure and purpose of the experiment repositories. For more details visit [here](https://vlead.vlabs.ac.in/development/#development-process)
 
-## Repository Creation:
-The VLEAD team will create a GitHub repository for each experiment. The write access to these reopsitories is a must to be able to create, edit or modify the experiment. You can refer to this [example repository](https://github.com/virtual-labs-cms/exp-template) to get familiar with the structure and format.
+## Repository Creation
+The VLEAD team will create a GitHub repository for each experiment. The write access to these repositories is a must to be able to create, edit or modify the experiment. You can refer to this [example repository](https://github.com/virtual-labs-cms/exp-template) to get familiar with the structure and format.
 
-## Branch Structure:
+## Branch Structure
 Each repository will contain four branches:
 * **dev** (development)
 * **testing** (end-to-end testing)
@@ -16,7 +15,7 @@ Each repository will contain four branches:
 * **main** (production-ready)
 Developers are expected to work only in the dev branch. After performing unit testing within the dev branch, the code can be moved to the testing branch for comprehensive end-to-end testing.
 
-## Tags:
+## Tags
 To ensure proper structure and organization of the experiment, it is essential to assign relevant tags. These tags help categorize the experiment for better accessibility and searchability.
 
 When adding tags, please adhere to the following guidelines:
